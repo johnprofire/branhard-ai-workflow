@@ -880,3 +880,181 @@ Task created successfully:
 
 Test automatic task journaling
 
+
+
+---
+
+## TASK CREATED
+
+**Date:** 2026-09-20 11:14:49
+
+### Task
+
+test chatgpt
+
+### Status
+
+CHATGPT PLANNING
+
+
+
+
+---
+
+## CHATGPT — STARTED
+
+**Date:** 2026-09-20 11:14:49
+
+ChatGPT has started planning the following task:
+
+test chatgpt
+
+
+
+
+---
+
+## CHATGPT — PLAN
+
+**Date:** 2026-09-20 11:15:08
+
+### Task
+
+test chatgpt
+
+### Plan
+
+# BRANHARD AI Workflow Plan
+
+## 1. Objective
+
+Validate that the BRANHARD AI workflow successfully receives, plans, reviews, fixes, tests, saves, and records a simple task:
+
+> “test chatgpt”
+
+The immediate objective is to confirm that ChatGPT can produce a structured implementation plan suitable for handoff to Claude, Grok, testing, GitHub, and the project journal.
+
+## 2. Requirements
+
+- Accept the task titled **“test chatgpt.”**
+- Produce a clear project plan using the required BRANHARD format.
+- Ensure the plan is understandable to the next workflow stage, Claude — BUILD.
+- Avoid unnecessary implementation code because the task does not describe a product or feature.
+- Preserve the workflow sequence:
+  1. ChatGPT — PLAN
+  2. Claude — BUILD
+  3. Grok — REVIEW
+  4. ChatGPT — DECIDE
+  5. Claude — FIX
+  6. TEST — VERIFY
+  7. GitHub — SAVE
+  8. Journal — RECORD
+
+## 3. Design and UX Requirements
+
+- Use clear, professional headings.
+- Keep the response concise because this is a workflow validation task.
+- Make the plan easy to scan and hand off between AI tools.
+- Clearly distinguish confirmed requirements from assumptions.
+- Do not introduce unnecessary branding, visual design, or user-facing interface changes.
+- If this task is intended only as a communication test, state that explicitly.
+
+## 4. Technical Requirements
+
+- No production code is required.
+- No database, API, frontend, backend, or deployment changes are required.
+- The workflow should support passing the plan to Claude for evaluation.
+- Any generated output should be stored or copied into the project workflow record if the process requires it.
+- If the task is used to test an integration, verify that:
+  - The message is received correctly.
+  - The response is not truncated.
+  - The required planning sections are present.
+  - The output can be passed to the next workflow stage.
+
+## 5. Step-by-Step Implementation Plan
+
+1. **Confirm task scope**
+   - Interpret “test chatgpt” as a workflow and response-generation test.
+   - Confirm that no application feature has been requested.
+
+2. **Generate the ChatGPT plan**
+   - Provide the required eight planning sections.
+   - Identify that there is no implementation work unless a later workflow stage reveals a specific test objective.
+
+3. **Hand off to Claude — BUILD**
+   - Claude should determine whether any build action is necessary.
+   - If no build action is needed, Claude should document that the task is non-code and ready for review.
+
+4. **Send to Grok — REVIEW**
+   - Grok should check whether the plan is complete, practical, and aligned with the simple task.
+   - Grok should flag any ambiguity or unnecessary scope.
+
+5. **ChatGPT — DECIDE**
+   - Accept the plan if it accurately treats this as a workflow validation.
+   - Reject or revise it if the task is intended to test a specific integration, feature, or output format.
+
+6. **Claude — FIX**
+   - Apply any required corrections from the decision stage.
+   - Keep the final result limited to the confirmed scope.
+
+7. **TEST — VERIFY**
+   - Run the testing checklist below.
+   - Confirm that all required workflow outputs are available.
+
+8. **GitHub — SAVE**
+   - Save the final plan or workflow record only if repository documentation is part of the process.
+   - Do not create unnecessary code commits.
+
+9. **Journal — RECORD**
+   - Record the task, result, workflow status, and any issues discovered.
+
+## 6. Testing Checklist
+
+- [ ] The task name is recorded as **“test chatgpt.”**
+- [ ] ChatGPT produced all eight required planning sections.
+- [ ] The response clearly states that no implementation code is required.
+- [ ] The response is understandable without additional context.
+- [ ] The plan can be handed off to Claude without clarification.
+- [ ] Grok review identifies no major omissions.
+- [ ] ChatGPT decision confirms the correct scope.
+- [ ] No unnecessary files or code changes were created.
+- [ ] The workflow status advances correctly through each stage.
+- [ ] The final result is recorded in GitHub and/or the project journal where required.
+
+## 7. Potential Problems
+
+- The task is ambiguous and may be intended to test a specific ChatGPT capability rather than the complete workflow.
+- Claude may attempt to create code despite there being no feature requirement.
+- The workflow may lack a defined location for storing plans, reviews, and journal entries.
+- GitHub saving may be unnecessary for a conversational test but could still be expected by the automation.
+- The test may pass at the response level while failing at the integration or handoff level.
+- No success criteria were provided beyond testing ChatGPT, so the final result should be judged primarily on format, completeness, and workflow continuity.
+
+## 8. Definition of Done
+
+The task is complete when:
+
+- ChatGPT has produced a structured plan using all required sections.
+- The plan identifies the task as a non-code workflow validation unless further requirements are supplied.
+- Claude, Grok, ChatGPT, testing, GitHub, and Journal stages have clear next actions.
+- The output passes the testing checklist.
+- Any discovered issues are documented.
+- The final workflow status is recorded as complete or passed.
+
+### Plan File
+
+project/requirements/chatgpt_plan.md
+
+### Next Stage
+
+CLAUDE — BUILD
+
+
+
+### TASK CREATED
+**Time:** 2026-09-20 11:15:08
+
+Task created successfully:
+
+test chatgpt
+
