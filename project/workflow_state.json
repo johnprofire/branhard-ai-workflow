@@ -1,0 +1,22 @@
+{
+  "status": "CHATGPT_PLAN",
+  "sequence": 2,
+  "history": [
+    {
+      "sequence": 1,
+      "stage": "TASK_CREATED",
+      "owner": "SYSTEM",
+      "status": "SUCCESS",
+      "timestamp_utc": "2026-09-20T20:42:19.640801+00:00",
+      "completed_at_utc": "2026-09-20T20:42:19.642385+00:00"
+    },
+    {
+      "sequence": 2,
+      "stage": "CHATGPT_PLAN",
+      "owner": "CHATGPT",
+      "status": "SUCCESS",
+      "timestamp_utc": "2026-09-20T20:43:03.189676+00:00",
+      "completed_at_utc": "2026-09-20T20:43:42.135041+00:00"
+    }
+  ]
+}

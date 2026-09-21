@@ -1,10 +1,7 @@
-
 import os
-from stage_controller import start_stage, complete_stage
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
-from github_journal import journal_event
 
 # Load API keys from .env
 load_dotenv()
@@ -235,12 +232,6 @@ Journal  → RECORD
 
     print("\nSending task to ChatGPT...")
 
-    try:
-        start_stage("CHATGPT_PLAN")
-    except ValueError as error:
-        print(f"\n✗ Stage Controller: {error}")
-        return
-
     append_journal(
         "CHATGPT — STARTED",
         f"""ChatGPT has started planning the following task:
@@ -310,8 +301,6 @@ CLAUDE — BUILD
     # JOURNAL PLAN
     # --------------------------------------------------------
 
-    complete_stage("CHATGPT_PLAN")
-
     append_journal(
         "CHATGPT — PLAN",
         f"""### Task
@@ -352,19 +341,10 @@ GITHUB   → SAVE
 JOURNAL  ✓ RECORD
 """)
 
-    journal_event(
-        "TASK CREATED",
-        f"Task created successfully:\n\n{task}"
-    )
-
-    journal_event(
-        "TASK CREATED",
-        f"Task created successfully:\n\n{task}"
-    )
-
     print("=" * 55)
     print("Task successfully recorded.")
     print("=" * 55)
+
 
 # ============================================================
 # START
